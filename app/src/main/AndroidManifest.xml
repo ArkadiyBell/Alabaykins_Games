@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.alabaykinsgames">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/ic_launcher_background"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_launcher_background"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AlabaykinsGames"
+        tools:targetApi="31">
+        <activity
+            android:name=".Day"
+            android:exported="false" />
+        <activity
+            android:name=".Night"
+            android:exported="false" />
+        <activity
+            android:name=".FirstDay"
+            android:exported="false" />
+        <activity
+            android:name=".WhatMyRole"
+            android:exported="false" />
+        <activity
+            android:name=".NextPerson"
+            android:exported="false"
+            android:label="@string/title_activity_next_person"
+            android:theme="@style/Theme.AlabaykinsGames.NoActionBar" />
+        <activity
+            android:name=".WhoIsWho"
+            android:exported="false" />
+        <activity
+            android:name=".PlayersMafia"
+            android:exported="false" />
+        <activity
+            android:name=".MafiaLobby"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
